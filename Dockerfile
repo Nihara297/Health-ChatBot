@@ -1,5 +1,13 @@
 FROM python:3.10-slim-buster
+
 WORKDIR /app
-COPY ./app
-RUN pip install -r requirements.txt
-cmd ["python3", "app.py"]
+
+# Copy requirements first to leverage caching
+COPY ./app/requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the app
+COPY ./app .
+
+CMD ["python3", "app.py"]

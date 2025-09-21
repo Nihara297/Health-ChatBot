@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 from langchain_pinecone import PineconeVectorStore
 from src.helper import download_hugging_face_embeddings
 from langchain.chains import create_retrieval_chain

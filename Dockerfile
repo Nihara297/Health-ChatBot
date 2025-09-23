@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-slim-bookworm
 
 WORKDIR /app
 
@@ -15,5 +15,8 @@ RUN pip install --upgrade pip \
 
 # Copy the rest of your application
 COPY . .
+
+# Expose port your app will run on
+EXPOSE 5001
 
 CMD ["python3", "app.py"]

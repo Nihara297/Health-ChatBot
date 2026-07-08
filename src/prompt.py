@@ -9,6 +9,11 @@ from langchain_core.prompts import ChatPromptTemplate
 
 # Load environment variables
 load_dotenv()
+<<<<<<< HEAD
+=======
+load_dotenv()
+
+>>>>>>> 1570cee (Update chatbot and fix project configuration)
 pinecone_api_key = os.getenv("PINECONE_API_KEY")
 pinecone_env = os.getenv("PINECONE_INDEX_URL")
 gemini_api_key = os.getenv("GEMINI_API_KEY")

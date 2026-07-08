@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> 1570cee (Update chatbot and fix project configuration)
